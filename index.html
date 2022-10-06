@@ -8,61 +8,124 @@
     <title>Centro Médico Ñuñoa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./assets/css/estilo.css">
 
 
 </head>
 
 <body>
-         
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/img/doc.jpg" class="d-block w-100" alt="doctor">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/centro.png" class="d-block w-100" alt="centro">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <h1 class="text-center">Estadísticas centro médico Ñuñoa</h1>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/doc.jpg" class="d-block w-100" alt="doctor">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/centro.png" class="d-block w-100" alt="centro">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h1 class="text-center mt-2">Estadísticas centro médico Ñuñoa</h1>
+    </header>
 
-        </header>
-        <h2 class="text-center">Primera y última atención programada</h2>
-        <h3>Radiología</h3>
-        <p id="radiologia"></p>
-        <h3>Traumatología</h3>
-        <p id="traumatologia"></p>
-        <h3>Dental</h3>
-        <p id="dental"></p>
+    <div class="container">
+        <section id="primera-ultima" class="p-4">
+            <h2 class="text-center">Primera y última atención programada</h2>
+            <!-- <h3>Radiología</h3>
+            <p id="radiologia" class="m-4"></p>
+            <h3>Traumatología</h3>
+            <p id="traumatologia" class="m-4"></p>
+            <h3>Dental</h3>
+            <p id="dental" class="m-4"></p> -->
 
-        <h2>Horas agendadas el día de hoy</h2>
-        <h3>Radiología</h3>
-        <table id="t-radio" class="table table-striped" ></table>
-        <h3>Traumatología</h3>
-        <table id="t-trauma" class="table table-striped"></table>
-        <h3>Dental</h3>
-        <table id="t-dental" class="table table-striped"></table>
+            <div class="row row-content align-items-center justify-content-center">
+                <div class="card-group">
+                
+                    <div class="card col-12 col-sm-6">
+                        <h3 class="card-header text-center">Radiología</h3>
+                        <div class="card-body ">
+                            <p id="radiologia" class="m-4"></p>
+                        </div>
+                        <div class="card-footer">
+                            <p id="radio-ultima"></p> 
+                        </div>
+                    </div>
+    
+                    <div class="card col-12 col-sm-6">
+                        <h3 class="card-header text-center">Traumatología</h3>
+                        <div class="card-body ">
+                            <p id="traumatologia" class="m-4"></p>
+                        </div>
+                        <div class="card-footer">
+                            <p id="trauma-ultima"></p> 
+                        </div>
+                    </div>
+    
+                    <div class="card col-12 col-sm-6">
+                        <h3 class="card-header text-center">Dental</h3>
+                        <div class="card-body ">
+                            <p id="dental" class="m-4"></p>
+                        </div>
+                        <div class="card-footer">
+                            <p id="dental-ultima"></p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    
+        <section id="agenda-completa" class="mt-4">
+            <h2>Horas agendadas el día de hoy</h2>
+            <h3>Radiología</h3>
+            <table id="t-radio" class="table table-striped"></table>
+            <h3>Traumatología</h3>
+            <table id="t-trauma" class="table table-striped"></table>
+            <h3>Dental</h3>
+            <table id="t-dental" class="table table-striped"></table>
+        </section>
+    
+        <form id="formulario" class="mx-auto my-4 justify-content-center d-block align-items-center">
+            <div class="card col-12 col-sm-5 col-md-3 col-lg-3 mb-3 mx-auto">
+                <h2 class="card-header text-center ">Ingresar nueva hora</h2>
+                <div class="card-body ">
+                    <label for="rutP" class="form-label">RUT del paciente</label>
+                        <input type="text" class="form-control" id="rutP">
+                    <label for="rutM" class="form-label">RUT del especialista</label>
+                        <input type="text" class="form-control" id="rutM">
+                    <label for="hora" class="form-label">Hora</label>
+                        <input type="text" class="form-control" id="hora">
+                    <button class="btn btn-primary my-2" type="submit">Enviar</button>
+                </div>
+            </div>
+
+                
+        </form>
+
+        <footer> <p class="bg-dark text-center text-light p-3"> ©️ 2022 Centro Médico Ñuñoa <a href="mailto:contacto@centronunoa.cl" class="a-footer">contacto@centronunoa.cl</a></p></footer> 
     </div>
+
+
     <script src="./assets/js/datos.js"></script>
     <script src="./assets/js/aplicacion.js"></script>
 

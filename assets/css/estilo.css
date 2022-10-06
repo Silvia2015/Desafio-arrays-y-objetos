@@ -1,0 +1,19 @@
+
+
+/* #agenda-completa {
+    background-color: ;
+} */
+
+.a-footer {
+    color:rgb(195, 195, 195);
+    margin-left: 2em;
+    text-decoration: none;
+}
+
+.a-footer:hover {
+    color:azure;
+}
+
+#primera-ultima {
+    background-color: rgb(250, 214, 168, 0.5);
+}
