@@ -15,7 +15,7 @@ dentaldom.innerText= "Primera Atención: "+ dental[0].paciente.nombre + " - "+ d
     +" | "+"Última Atención: "+ dental[dental.length-1].paciente.nombre + " - "+ dental[dental.length-1].paciente.prevision 
 
 function encabezado () {
-    let headers = '<tr><th>Hora</th><th>Especialista</th><th>Paciente</th><th>RUT</th><th>Previsión</th></tr>';
+    let headers = '<tr class="table-primary"><th>Hora</th><th>Especialista</th><th>Paciente</th><th>RUT</th><th>Previsión</th></tr>';
     return headers;
 }
 

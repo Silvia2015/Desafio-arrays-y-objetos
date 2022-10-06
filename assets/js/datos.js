@@ -45,7 +45,7 @@ let traumatologia= [
     {hora: '8:00',
     especialista: 'Maria Altuzarra',
     paciente: {
-        nombre: 'Paula SAnchez',
+        nombre: 'Paula Sanchez',
         rut: '15554774-5',
         prevision: 'Fonasa'
         }
