@@ -115,60 +115,66 @@ let traumatologia = [
 
 
 ]
-// nuevas horas en Traumatología
 
-        const nuevoTrauma =[ {hora: '09:00',
+// -----------------------------
+// nuevas horas en Traumatología
+// -----------------------------
+
+let nuevoTrauma = [
+    {
+        hora: '09:00',
         especialista: 'René Poblete',
         paciente: {
             nombre: 'Ana Gellona',
             rut: '13123329-7',
             prevision: 'Isapre'
-        }},
-            {
-                hora: '09:30',
-                especialista: 'María Solar',
-                paciente: {
-                    nombre: 'Ramiro Andrade',
-                    rut: '12221451-K',
-                    prevision: 'Fonasa'
-                }
-                
-            },
+        }
+    },
+    {
+        hora: '09:30',
+        especialista: 'María Solar',
+        paciente: {
+            nombre: 'Ramiro Andrade',
+            rut: '12221451-K',
+            prevision: 'Fonasa'
+        }
 
-            {
-                hora: '10:00',
-                especialista: 'Raúl Loyola',
-                paciente: {
-                    nombre: 'Carmen Isla',
-                    rut: '10112348-3',
-                    prevision: 'Isapre'
-                }
-                
-            },
+    },
 
-            {
-                hora: '10:30',
-                especialista: 'Antonio Larenas',
-                paciente: {
-                    nombre: 'Pablo Loayza',
-                    rut: '13453234-1',
-                    prevision: 'Isapre'
-                }
-                
-            },
+    {
+        hora: '10:00',
+        especialista: 'Raúl Loyola',
+        paciente: {
+            nombre: 'Carmen Isla',
+            rut: '10112348-3',
+            prevision: 'Isapre'
+        }
 
-            {
-                hora: '12:00',
-                especialista: 'Matías Aravena',
-                paciente: {
-                    nombre: 'Susana Poblete',
-                    rut: '14345656-6',
-                    prevision: 'Fonasa'
-                }
-                
-            }
-        ]
-      
+    },
+
+    {
+        hora: '10:30',
+        especialista: 'Antonio Larenas',
+        paciente: {
+            nombre: 'Pablo Loayza',
+            rut: '13453234-1',
+            prevision: 'Isapre'
+        }
+
+    },
+
+    {
+        hora: '12:00',
+        especialista: 'Matías Aravena',
+        paciente: {
+            nombre: 'Susana Poblete',
+            rut: '14345656-6',
+            prevision: 'Fonasa'
+        }
+
+    }
+]
+
 
 
 
