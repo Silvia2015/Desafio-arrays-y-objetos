@@ -58,34 +58,34 @@
 
             <div class="row row-content align-items-center justify-content-center">
                 <div class="card-group">
-                
+
                     <div class="card col-12 col-sm-6">
                         <h3 class="card-header text-center">Radiología</h3>
                         <div class="card-body ">
                             <p id="radiologia" class="m-4"></p>
                         </div>
                         <div class="card-footer">
-                            <p id="radio-ultima"></p> 
+                            <p id="radio-ultima"></p>
                         </div>
                     </div>
-    
+
                     <div class="card col-12 col-sm-6">
                         <h3 class="card-header text-center">Traumatología</h3>
                         <div class="card-body ">
                             <p id="traumatologia" class="m-4"></p>
                         </div>
                         <div class="card-footer">
-                            <p id="trauma-ultima"></p> 
+                            <p id="trauma-ultima"></p>
                         </div>
                     </div>
-    
+
                     <div class="card col-12 col-sm-6">
                         <h3 class="card-header text-center">Dental</h3>
                         <div class="card-body ">
                             <p id="dental" class="m-4"></p>
                         </div>
                         <div class="card-footer">
-                            <p id="dental-ultima"></p> 
+                            <p id="dental-ultima"></p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
 
 
         </section>
-    
+
         <section id="agenda-completa" class="mt-4">
             <h2>Horas agendadas el día de hoy</h2>
             <h3>Radiología</h3>
@@ -104,25 +104,40 @@
             <h3>Dental</h3>
             <table id="t-dental" class="table table-striped"></table>
         </section>
-    
+
+
+
+        <section id="listadoPacientes" class="mt-4">
+            <h2>Listado total de pacientes</h2>
+            <table id="t-pacientes" class="table table-striped" > 
+                <tr><th>Nombre paciente</th></tr>
+            </table>
+         
+        </section>
+
+
+
         <form id="formulario" class="mx-auto my-4 justify-content-center d-block align-items-center">
             <div class="card col-12 col-sm-5 col-md-3 col-lg-3 mb-3 mx-auto">
                 <h2 class="card-header text-center ">Ingresar nueva hora</h2>
                 <div class="card-body ">
                     <label for="rutP" class="form-label">RUT del paciente</label>
-                        <input type="text" class="form-control" id="rutP">
+                    <input type="text" class="form-control" id="rutP">
                     <label for="rutM" class="form-label">RUT del especialista</label>
-                        <input type="text" class="form-control" id="rutM">
+                    <input type="text" class="form-control" id="rutM">
                     <label for="hora" class="form-label">Hora</label>
-                        <input type="text" class="form-control" id="hora">
+                    <input type="text" class="form-control" id="hora">
                     <button class="btn btn-primary my-2" type="submit">Enviar</button>
                 </div>
             </div>
 
-                
+
         </form>
 
-        <footer> <p class="bg-dark text-center text-light p-3"> ©️ 2022 Centro Médico Ñuñoa <a href="mailto:contacto@centronunoa.cl" class="a-footer">contacto@centronunoa.cl</a></p></footer> 
+        <footer>
+            <p class="bg-dark text-center text-light p-3"> ©️ 2022 Centro Médico Ñuñoa <a
+                    href="mailto:contacto@centronunoa.cl" class="a-footer">contacto@centronunoa.cl</a></p>
+        </footer>
     </div>
 
 

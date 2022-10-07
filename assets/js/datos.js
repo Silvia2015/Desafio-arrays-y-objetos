@@ -50,7 +50,7 @@ let radiologia = [
 
 let traumatologia = [
     {
-        hora: '8:00',
+        hora: '08:00',
         especialista: 'Maria Altuzarra',
         paciente: {
             nombre: 'Paula Sanchez',
