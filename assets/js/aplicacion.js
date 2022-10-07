@@ -11,6 +11,7 @@ const tablaTrauma = document.getElementById("t-trauma")
 const tablaDental = document.getElementById("t-dental")
 const tablaPacientes = document.getElementById("t-pacientes")
 const tablaDentalIsapre = document.getElementById("t-dentalIsapre")
+const tablaTraumaFonasa = document.getElementById("t-traumaFonasa")
 
 
 radiologiadom.innerHTML = "<strong>Primera Atención: </strong>" + radiologia[0].paciente.nombre + " - " + radiologia[0].paciente.prevision
@@ -61,14 +62,26 @@ function totalPacientes() {
 function filtrarDentalIsapre () {
     let nombres =tablaDentalIsapre.innerHTML;
     let filtrados = dental.filter(function (registro) {
-        return registro.prevision == "Isapre"
+        return registro.paciente.prevision == "Isapre"
     }) 
-    console.log (filtrados)
+    
     filtrados.forEach(function (registro) {
         nombres = nombres + "<tr> <td>" + registro.paciente.nombre +  "</td> </tr>"
  
     })
     tablaDentalIsapre.innerHTML=nombres
+}
+function filtrarTraumaFonasa () {
+    let nombres =tablaTraumaFonasa.innerHTML;
+    let filtrados = traumaActualizado.filter(function (registro) {
+        return registro.paciente.prevision == "Fonasa"
+    }) 
+    
+    filtrados.forEach(function (registro) {
+        nombres = nombres + "<tr> <td>" + registro.paciente.nombre +  "</td> </tr>"
+ 
+    })
+    tablaTraumaFonasa.innerHTML=nombres
 }
 
 
@@ -104,3 +117,4 @@ dibujaTabla(tablaDental, dental);
 
 totalPacientes();
 filtrarDentalIsapre();
+filtrarTraumaFonasa();
