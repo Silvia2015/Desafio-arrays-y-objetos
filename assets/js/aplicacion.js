@@ -10,6 +10,8 @@ const tablaRadio = document.getElementById("t-radio")
 const tablaTrauma = document.getElementById("t-trauma")
 const tablaDental = document.getElementById("t-dental")
 const tablaPacientes = document.getElementById("t-pacientes")
+const tablaDentalIsapre = document.getElementById("t-dentalIsapre")
+
 
 radiologiadom.innerHTML = "<strong>Primera Atención: </strong>" + radiologia[0].paciente.nombre + " - " + radiologia[0].paciente.prevision
 radioUltima.innerHTML = "<strong>Última Atención: </strong>" + radiologia[radiologia.length - 1].paciente.nombre + " - " + radiologia[radiologia.length - 1].paciente.prevision
@@ -56,6 +58,18 @@ function totalPacientes() {
     })
     tablaPacientes.innerHTML = contenidoTabla;
 }
+function filtrarDentalIsapre () {
+    let nombres =tablaDentalIsapre.innerHTML;
+    let filtrados = dental.filter(function (registro) {
+        return registro.prevision == "Isapre"
+    }) 
+    console.log (filtrados)
+    filtrados.forEach(function (registro) {
+        nombres = nombres + "<tr> <td>" + registro.paciente.nombre +  "</td> </tr>"
+ 
+    })
+    tablaDentalIsapre.innerHTML=nombres
+}
 
 
 var traumaActualizado = traumatologia.concat(nuevoTrauma);
@@ -89,3 +103,4 @@ dibujaTabla(tablaTrauma, traumaActualizado);
 dibujaTabla(tablaDental, dental);
 
 totalPacientes();
+filtrarDentalIsapre();
